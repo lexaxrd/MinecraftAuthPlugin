@@ -1,0 +1,16 @@
+name: serverAuthPlugin
+version: '1.0'
+main: xyz.themis.serverAuthPlugin.Main
+api-version: '1.20'
+authors: [ lexa ]
+commands:
+  register:
+    description: Register the user to the server
+    usage: /register <email> <password>
+  login:
+    description: Login the server
+    usage: /login <password>
+  verify-email:
+    description: This command allows you to verify your account.
+    usage: /verify-email <code>
+

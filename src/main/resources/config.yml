@@ -1,0 +1,49 @@
+email:
+  server-name: "Roselia Network"
+  subject: "Roselia Network | Verify Your Account"
+  your-email: "YOUR GOOGLE EMAIL"
+  app-password: "YOUR GOOGLE APP PASSWORD"
+  messages:
+    email-sent: "Email has been sent."
+    error-occurred: "An error occurred while sending e-mail: %error%"
+    email-app-password-missing: "E-mail or app password is missing. Please check these two in config.yml file."
+mongo:
+  url: "MONGODB URL"
+  db-name: "DB NAME"
+  collection-name: "COLLECTION NAME"
+world:
+  teleport-auth-world: false
+  auth-world-name: "auth"
+  auth-world-teleport-location:
+    x: -2.374
+    y: -60.00000
+    z: 2.300
+  lobby-world-name: "world"
+  lobby-world-teleport-location:
+    x: 16.304
+    y: 65.0
+    z: -15.835
+  hide-other-players: true
+messages:
+  already-verified: "&6[WARNING] You're already verified!"
+  code-valid: "&c[ERROR] Code is valid, please check it and try again."
+  verification-failed: "&c[ERROR] An error occurred while verifying your account: %error%"
+  verification-successful: "&a[SUCCESSFUL] Verification successful!"
+  code-expired: "&e[WARNING] Code has expired. We have sent a new e-mail for verification, please check your e-mail."
+  code-not-found: "&e[WARNING] Code not found. We have sent a new e-mail for verification, please check your e-mail."
+  code-missing: "&c[ERROR] Usage: /verify-email <code>"
+
+  verification-required: "&e[WARNING] Your account is not verified. We have sent a new e-mail for verification, please check your e-mail."
+  login-successful: "&a[SUCCESSFUL] Login successful! Have fun playing, you're being teleported to the lobby."
+  password-wrong: "&c[ERROR] Password is wrong, please try again."
+  no-account: "&c[ERROR] There is no account registered to your Minecraft account. You must register first."
+  password-missing: "&c[ERROR] Usage: /login <password>"
+
+  registration-successful: "&a[SUCCESSFUL] Registration successful! &ePlease verify your email account before trying to log in to the server. You can't login the server without verifying your email account."
+  email-already-registered: "&c[ERROR] This email is already registered"
+  already-registered: "&c[ERROR] This Minecraft account is already registered"
+  args-missing: "&c[ERROR] Usage: /register <email> <password>"
+  only-players: "&c[ERROR] Only players can use this command."
+
+  cant-send-message: "&c[ERROR] You can't chat in this world."
+  required-auth: "&aWelcome to the server! &cAuthentication required.\n&fIf you already have an account, type /login <password>\nIf you are new, type /register <email> <password>"
