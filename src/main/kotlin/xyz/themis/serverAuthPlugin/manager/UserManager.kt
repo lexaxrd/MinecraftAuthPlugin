@@ -78,15 +78,18 @@ class UserManager(val plugin: Main, val usersCollection: MongoCollection<Documen
             return false
         }
 
-        val userVerifyStatus = user.getBoolean("verified")
-        if (!userVerifyStatus) {
-            val userEmail = user.getString("email")
+        if (plugin.configManager.getConfig().getBoolean("settings.disallow-unverified-accounts") ?: true) {
+            val userVerifyStatus = user.getBoolean("verified")
+            if (!userVerifyStatus) {
+                val userEmail = user.getString("email")
 
-            player.sendMessage(coloredMessage(plugin.configManager.getConfig().getString("messages.verification-required")!!))
-            sendVerificationCodeToUser(player, userEmail)
+                player.sendMessage(coloredMessage(plugin.configManager.getConfig().getString("messages.verification-required")!!))
+                sendVerificationCodeToUser(player, userEmail)
 
-            return false
+                return false
+            }
         }
+
         player.sendMessage(coloredMessage(plugin.configManager.getConfig().getString("messages.login-successful")!!))
         return true
     }

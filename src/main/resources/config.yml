@@ -1,3 +1,5 @@
+settings:
+  disallow-unverified-accounts: true
 email:
   server-name: "Roselia Network"
   subject: "Roselia Network | Verify Your Account"
