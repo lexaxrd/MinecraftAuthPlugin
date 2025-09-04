@@ -1,25 +1,40 @@
-Minecraft Authentication system with account verification system via e-mail. You can easily set up authentication system on your Minecraft server. Just make the settings from the config.yml file that is created when you run the plugin. MongoDB was used as database in the Project.
+# Minecraft Authentication Plugin  
 
-Welcome text
+A **secure authentication system** for your Minecraft server with **e-mail verification support**.  
+Easily set it up through the `config.yml` file generated on the first run.  
+This plugin uses **MongoDB** as its database backend.  
 
-![1](screenshots/1.png)
+---
 
+## ✨ Features
+- Simple **email-based registration & login** system.  
+- **Email verification** with one-time code.  
+- Fully configurable via `config.yml`.  
+- Secure **MongoDB database integration**.  
+
+---
+
+## 📝 Commands  
+
+### 🔐 Registration  
+```mc
 /register [email] [password]
 
 ![2](screenshots/2.png)
 
-/login [password] (not verified message) 
+/login [password]
 
 ![3](screenshots/3.png)
 
-/verify-email [code] (verification successful message) 
+/verify-email [code] 
 
 ![4](screenshots/4.png)
 
-/verify-email [code] (already verified message)
+/verify-email [code] 
  
 ![5](screenshots/5.png)
 
-/login [password] (login successful message)
+/login [password]
  
-![6](screenshots/6.png) 
+![6](screenshots/6.png)
+```
