@@ -19,6 +19,7 @@ This plugin uses **MongoDB** as its database backend.
 ### 🔐 Registration  
 ```mc
 /register [email] [password]
+```
 
 ![2](screenshots/2.png)
 
