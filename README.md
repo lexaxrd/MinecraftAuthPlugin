@@ -46,4 +46,3 @@ This plugin uses **MongoDB** as its database backend.
 ```
  
 ![6](screenshots/6.png)
-```
