@@ -23,19 +23,27 @@ This plugin uses **MongoDB** as its database backend.
 
 ![2](screenshots/2.png)
 
+```mc
 /login [password]
+```
 
 ![3](screenshots/3.png)
 
+```mc
 /verify-email [code] 
+```
 
 ![4](screenshots/4.png)
 
+```mc
 /verify-email [code] 
- 
+ ```
+
 ![5](screenshots/5.png)
 
+```mc
 /login [password]
+```
  
 ![6](screenshots/6.png)
 ```
